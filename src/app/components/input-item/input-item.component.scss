@@ -1,0 +1,38 @@
+.container-input{
+  display: flex;
+  flex-direction: column;
+  span{
+    width: 98%;
+    color: #E6AF2E;
+    text-align: end;
+    margin: 0.2rem;
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+
+.input{
+  width: 360px;
+  border-radius: 6px;
+  border: 1px solid #E6AF2E;
+  height: auto;
+
+  input{
+    width: 98%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    font-weight: 600;
+    color: #F2F2F2;
+    margin-left: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  &:focus-within{
+    border-color: #F0C451;
+    box-shadow: 0 0 6px #F0C451;
+  }
+}

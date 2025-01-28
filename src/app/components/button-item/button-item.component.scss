@@ -1,0 +1,35 @@
+
+.button{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  button{
+    display: unset;
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    &:hover{
+      cursor: pointer;
+    }
+
+    .bi-plusbi-plus{
+      font-size: large;
+    }
+  }
+
+  :focus-within{
+    width: 100%;
+    width: 35px;
+    height: 35px;
+      border-color: #F0C451;
+      box-shadow: 0 0 10px #F0C451;
+      border-radius: 100%;
+  }
+}

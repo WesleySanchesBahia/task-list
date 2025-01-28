@@ -1,0 +1,15 @@
+<div class="container-input">
+  <div class="input">
+    <input
+      #inputElement
+      type="text"
+      placeholder="Oque você planejou para hoje?"
+      [value]="value"
+      [type]="type"
+      (input)="onInput($event)"
+      (blur)="onTouched()"
+      maxlength="40"
+    />
+  </div>
+  <span>{{value.length}} / 40 </span>
+</div>

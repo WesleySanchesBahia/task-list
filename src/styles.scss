@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+
+html, body {
+              height: 98%;
+              box-sizing: border-box;
+              background-color: #191716;
+              font-family: "Nunito", serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Largura da scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3; /* Cor de fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e6af2e; /* Cor da barra */
+  border-radius: 4px; /* Deixa a barra com bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d89d1c; /* Cor da barra ao passar o mouse */
+}
+
+/* Estiliza barras de rolagem verticais específicas */
+div.custom-scrollbar {
+  overflow-y: auto;
+  max-height: 400px; /* Altura máxima */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #191716;
+  border-radius: 8px;
+}

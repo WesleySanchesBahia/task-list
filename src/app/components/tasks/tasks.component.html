@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card">
+    <div class="task" *ngFor="let task of tasks; let i = index">
+      <input
+        #input
+        [id]="i"
+        type="text"
+        [value]="task?.name"
+        [style]="task?.checked ? {'text-decoration': 'line-through', 'opacity':'50%'} : {'text-decoration': 'none'}"
+      />
+      <i class="bi bi-check-circle-fill"  (click)="checkTask(task)" [style]="task?.checked ? {'color':'#adff2f',}:{'color':'#F2F2F2'}"></i>
+      <i class="bi bi-trash-fill" (click)="deleteTask(i)"></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+.task{
+  width: 100%;
+  height: auto;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+
+  &:hover{
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+  }
+
+  input{
+    width: 98%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 30px;
+    max-height: 30px;
+
+    color: #F2F2F2;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+
+  .bi-check-circle-fill, .bi-trash-fill{
+    color: #F2F2F2;
+
+    margin-right: 0.2rem;
+  }
+
+  .bi-trash-fill{
+    &:hover{
+      color: #ff0000;
+      cursor: pointer
+    }
+  }
+
+  .bi-check-circle-fill{
+    &:hover{
+      color: #adff2f;
+      cursor: pointer
+    }
+  }
+
+
+}
+.card{
+  width: 400px;
+  height: 380px;
+  border-radius: 12px;
+  border: 1px solid #e6af2e88;
+  padding: 0.5rem;
+
+  max-height: 359px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
