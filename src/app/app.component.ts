@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
 
   constructor(private snackBar: MatSnackBar) {}
   ngOnInit(): void {
-    let tasks = sessionStorage.getItem("tasks");
+    let tasks = localStorage.getItem("tasks");
     if(tasks?.length){
       this.tasks = JSON.parse(tasks);
     }
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
 
     this.tasks.push(newTask);
     this.form.reset();
-    sessionStorage.setItem("tasks",JSON.stringify(this.tasks));
+    localStorage.setItem("tasks",JSON.stringify(this.tasks));
     this.focusInput();
   }
 
@@ -82,6 +82,6 @@ export class AppComponent implements OnInit {
 
 
   updateTaskSessionStorage(tasks:Array<Task>): void{
-   sessionStorage.setItem('tasks', JSON.stringify(tasks))
+   localStorage.setItem('tasks', JSON.stringify(tasks))
   }
 }

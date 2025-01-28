@@ -1,7 +1,7 @@
 
 # **Task List**
 
-Uma aplicação de lista de tarefas desenvolvida com **Angular 19**, **Bootstrap Icons** e **componentes personalizados**. Os dados das tarefas são armazenados no **SessionStorage** para simular a persistência local. Este projeto foi criado como parte do meu portfólio para demonstrar habilidades em desenvolvimento front-end com Angular.
+Uma aplicação de lista de tarefas desenvolvida com **Angular 19**, **Bootstrap Icons** e **componentes personalizados**. Os dados das tarefas são armazenados no **LocalStorage** para simular a persistência local. Este projeto foi criado como parte do meu portfólio para demonstrar habilidades em desenvolvimento front-end com Angular.
 
 ---
 
@@ -11,7 +11,7 @@ Uma aplicação de lista de tarefas desenvolvida com **Angular 19**, **Bootstrap
 - **Editar Tarefa**: Atualize o texto das tarefas existentes.
 - **Remover Tarefa**: Exclua tarefas da lista.
 - **Marcar como Concluída**: Riscando o texto ao concluir uma tarefa.
-- **Persistência Temporária**: Os dados são armazenados no **SessionStorage** enquanto o navegador está aberto.
+- **Persistência Temporária**: Os dados são armazenados no **LocalStorage** enquanto o navegador está aberto.
 
 ---
 
@@ -20,7 +20,7 @@ Uma aplicação de lista de tarefas desenvolvida com **Angular 19**, **Bootstrap
 - **Angular 19**: Framework principal para a construção do projeto.
 - **Bootstrap Icons**: Ícones leves e modernos para estilizar a interface.
 - **SCSS**: Estilos personalizados para uma interface elegante.
-- **SessionStorage**: Armazenamento local para simular persistência de dados.
+- **LocalStorage**: Armazenamento local para simular persistência de dados.
 - **Componentes Customizados**: Inputs e botões criados sob medida.
 
 ---
@@ -31,11 +31,9 @@ Uma aplicação de lista de tarefas desenvolvida com **Angular 19**, **Bootstrap
 src/
 ├── app/
 │   ├── components/
-│   │   ├── task-item/        # Componente individual de tarefa
-│   │   ├── task-list/        # Componente da lista de tarefas
-│   │   └── input-item/       # Componente de entrada personalizado
-│   ├── services/
-│   │   └── storage.service.ts # Serviço para manipulação do SessionStorage
+│   │   ├── buttom-item/        # Componente individual personalizado
+│   │   ├── input-item/        # Componente individual personalizado
+│   │   └── tasks/       # Componente de entrada personalizado das tarefas
 │   └── app.component.ts      # Componente raiz
 ├── assets/
 │   └── icons/                # Ícones utilizados no projeto
