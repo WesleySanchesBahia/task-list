@@ -28,6 +28,8 @@ export class TasksComponent implements OnInit {
     } else {
       task.checked = false;
     }
+
+    this.updateTask.emit(this.tasks);
   }
 
   deleteTask(index:number):void {
