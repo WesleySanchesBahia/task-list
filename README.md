@@ -1,6 +1,3 @@
-Aqui está um exemplo de um README para o seu projeto de **Task List**:
-
----
 
 # **Task List**
 
