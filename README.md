@@ -71,8 +71,8 @@ src/
 
 ## 📸 **Preview**
 
-### Interface Principal:
-![Task List Preview](https://via.placeholder.com/800x400?text=Task+List+Preview)
+### DEMO do projeto:
+![Task List](https://task-list-blush-chi.vercel.app/)
 
 ---
 
