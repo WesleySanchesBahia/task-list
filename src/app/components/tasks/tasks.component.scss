@@ -55,8 +55,15 @@
   border-radius: 12px;
   border: 1px solid #e6af2e88;
   padding: 0.5rem;
-
-  max-height: 359px;
   overflow-y: auto;
   overflow-x: hidden;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 70%;
+    max-width: 1200px;
+  }
 }

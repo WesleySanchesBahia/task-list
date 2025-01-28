@@ -68,17 +68,6 @@ src/
 
 ---
 
-## 🎨 **Personalização**
-
-O projeto usa variáveis SCSS para facilitar a customização de cores e estilos. Para ajustar as cores, edite o arquivo `styles.scss`:
-
-```scss
-$primary-color: #E6AF2E;
-$secondary-color: #191716;
-$text-color: #FFFFFF;
-```
-
----
 
 ## 📸 **Preview**
 
