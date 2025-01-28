@@ -49,22 +49,13 @@
 
 }
 .card{
-  width: 400px;
+  width: calc(400px - 20px);
   height: 380px;
-  min-width: 400px;
+  min-width: calc(400px - 20px);
 
   border-radius: 12px;
   border: 1px solid #e6af2e88;
   padding: 0.5rem;
   overflow-y: auto;
   overflow-x: hidden;
-
-  @media (min-width: 768px) {
-    width: 80%;
-  }
-
-  @media (min-width: 1024px) {
-    width: 70%;
-    max-width: 1200px;
-  }
 }

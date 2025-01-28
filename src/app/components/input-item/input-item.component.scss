@@ -13,7 +13,7 @@
 
 
 .input{
-  width: 360px;
+  width: calc(360px - 5px);
   border-radius: 6px;
   border: 1px solid #E6AF2E;
   height: auto;
