@@ -47,11 +47,12 @@
     }
   }
 
-
 }
 .card{
   width: 400px;
   height: 380px;
+  min-width: 400px;
+
   border-radius: 12px;
   border: 1px solid #e6af2e88;
   padding: 0.5rem;
